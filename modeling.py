@@ -9,7 +9,7 @@ mlflow.set_tracking_uri("http://localhost:5000")
 
 mlflow.sklearn.autolog()
 
-df = pd.read_csv(r"D:\Asah 2025\workflow-ci\salary_preprocessing.csv")
+df = pd.read_csv("salary_preprocessing.csv")
 
 # Splitting dataset
 X = df.drop('salary', axis=1)
