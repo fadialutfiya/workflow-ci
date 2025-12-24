@@ -17,6 +17,10 @@ jobs:
       with:
         python-version: '3.9'
 
-    - run: pip install mlflow
+    - name: Install dependencies
+      run: |
+        pip install mlflow
 
-    - run: echo "MLflow CI is running successfully"
+    - name: Run MLflow Project
+      run: |
+        mlflow run .
