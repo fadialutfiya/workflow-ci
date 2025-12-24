@@ -19,8 +19,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install mlflow
+        pip install mlflow scikit-learn pandas numpy
 
     - name: Run MLflow Project
       run: |
-        mlflow run .
+        mlflow run . --no-conda
